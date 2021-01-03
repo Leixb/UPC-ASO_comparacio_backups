@@ -1,5 +1,5 @@
 %! TEX root = **/010-main.tex
-% vim: spell spelllang=en:
+% vim: spell spelllang=ca:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % PREAMBLE
@@ -13,8 +13,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % METADATA
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\title{My title \\ \Large \normalfont My Subtitle}
-\author{First Author \\ Second Author}
+\title{Comparativa de sistemes de Backup \\ \Large \normalfont ASO}
+\author{Aleix Bon\'e Rib\'o}
 \date{\today}
 
 \begin{document}
@@ -34,10 +34,7 @@
     \pagenumbering{Roman}
 
     %\setcounter{tocdepth}{2}
-    \tableofcontents \pagebreak
-
-    \listoffigures \pagebreak
-    \listoftables \clearpage
+    \tableofcontents
 
     \pagenumbering{arabic}
 
@@ -49,23 +46,16 @@
     \setlength{\parskip}{1em plus 0.5em minus 0.2em}
     %\setlength{\parindent}{0pt}
 
-    \include{030-mysection}
+    \include{030-intro}
+    \include{040-veeam}
+    \include{050-bacula}
+    \include{060-tercer}
+    \include{070-conclusio}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % BIBLIO
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
     \printbibliography[heading=bibintoc]
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% APPENDIX
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-    % uncomment to add appendix section prefix to numbering
-    %\appendixpagenumbering
-
-    \appendix
-
-    \include{990-appendix}
 
 \end{document}
