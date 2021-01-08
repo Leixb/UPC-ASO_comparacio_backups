@@ -9,6 +9,26 @@
     \includegraphics[width=0.5\textwidth]{Bacula_logo}
 \end{figure}
 
+
+\emph{Bacula} es un sistema de copies de seguretat basat en un model de
+servidor/client en xarxa. Hi ha dues versions, la \emph{community} que és
+programari lliure sota la llicencia GPL2 i la \emph{enterprise} que conté
+codi propietari.
+
+La versió \emph{enterprise} ofereix assistència tècnica, millor documentació,
+més integracions i \emph{features}. Per exemple, la versió \emph{community}
+no té administració de \emph{snapshot}, copies de seguretat iniciades des del
+client, compressió en línia de comunicació o deduplicació entre altres
+\cite{noauthor_enterprise_nodate}.
+
+La configuració de \emph{Bacula} és significativament més complexa que
+\emph{Veeam} però permet configurar cada detall del sistema de copia i
+restauració. Tot i que la versió \emph{enterprise} ofereix múltiples plugins per
+integrar \emph{Bacula} amb altres serveis, no te tants com \emph{Veeam}.
+\emph{Bacula} es centra en la copia i restauració de copies de seguretat, no té
+altres funcionalitats.
+
+
 \subsection{BareOS}%
 \label{sub:bareos}
 
@@ -16,3 +36,12 @@
     \centering
     \includegraphics[width=0.5\textwidth]{Bareos_logo}
 \end{figure}
+
+El descontentament amb els mantenidors de \emph{Bacula} va portar a la creació
+d'una fork anomenada \emph{BareOS} en la que totes les característiques estan
+disponibles a la versió gratuïta i la subscripció es per
+assistència tècnica o accés a un repositori amb binaris precompilats amb les
+ultimes versions i \emph{bugfixes} \cite{noauthor_what_nodate-1,vermaden_why_2018}
+
+Tot i no tenir la mateixa funcionalitat que \emph{Bacula Enterprise}, és una
+opció a considerar.

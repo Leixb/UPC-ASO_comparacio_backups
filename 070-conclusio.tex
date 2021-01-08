@@ -3,3 +3,54 @@
 
 \section{Conclusions}%
 \label{sec:conclusions}
+
+\newcommand{\tick}{\ding{51}}
+
+\begin{table}[H]
+    \centering
+    \caption{Comparativa
+        \cite{noauthor_bacula_2014,noauthor_comparison_2020,noauthor_list_2020}
+}
+    \begin{tabular}{@{}lccccc@{}}
+        \toprule
+        & \multicolumn{2}{c}{Veeam} & \multicolumn{2}{c}{Bacula} &
+        \multirow{2}{*}{BackupPC} \\
+        & Community & Enterprise+ & Community & Enterprise & \\
+        \midrule
+        %                                 & V com & V ent & B com & B ent & Back &
+        Codi lliure                       &       &       & \tick &       & \tick \\
+        Compressió                        & \tick & \tick & \tick & \tick & \tick \\
+        Encriptat                         & \tick & \tick & \tick & \tick &       \\
+        Deduplicació                      &       & \tick &       & \tick &       \\
+        Màquines Virtuals                 & \tick & \tick & \tick & \tick &       \\
+        Snapshots                         & \tick & \tick &       & \tick &       \\
+        Bases de dades                    & \tick & \tick & \tick & \tick &       \\
+        Integració al núvol \footnotemark & \tick & \tick &       & \tick &       \\
+        Copia en cinta                    & \tick & \tick & \tick & \tick &       \\
+        Preu                              & FREE  & a negociar & FREE  &  a negociar    & FREE  \\
+        Assistència tècnica               &       & \tick &       & \tick &       \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\footnotetext{AWS, Azure, \dots}
+
+A la taula podem veure un resum de les diferencies entre els diferents programes
+estudiats en el document. Podem veure que \emph{BackupPC} no te gaires
+funcionalitats en comparació a la resta, però cal recordar que té un cas d'ús
+diferent a \emph{Bacula} o \emph{Veeam}. Pel que fa a les edicions
+\emph{community}, \emph{Bacula} ofereix menys funcionalitats que \emph{Veeam}.
+Les edicions d'empresa en general implementen les mateixes funcionalitats, on es
+diferencies son en les integracions amb altres productes (\emph{Veeam} ofereix
+molta més varietat) i la complexitat de configuració. \emph{Bacula} és més
+complex de configurar però permet ajustar millor el programa a les necessitats
+de l'usuari. Un altre factor a considerar es tot l'ecosistema de \emph{Veeam}
+que a part de les solucions estricament de copies de seguretat ofereix moltes
+eines per inspeccionar les copies i realitzar altres tasques especialitzades que
+\emph{Vacula} no ofereix.
+
+Així doncs, el producte més complet és \emph{Veeam}. \emph{Bacula}, malgrat la
+seva complexitat de configuració té més compatibilitat per fer copies de
+seguretat en hardware local. Finalment, \emph{BackupPC} es una eina simple per a
+fer copies de seguretat en disc a un sistema centralitzat amb configuració
+mínima. Depenent del cas d'ús de cada empresa poden ser opcions viables.

@@ -8,3 +8,21 @@
     \centering
     \includegraphics[width=0.5\textwidth]{BackupPC_logo}
 \end{figure}
+
+\emph{BackupPC} és un programari lliure (GPL-v3.0) que permet fer copies de seguretat
+disc a disc. No es necessari un programa client ja que el propi servidor
+accedeix als fitxers de cada màquina a traves de \emph{ssh/NFS/rsync/rsh} (o
+\emph{Samba} en Windows) \cite{noauthor_about_nodate}.
+
+El programa esta escrit en \emph{Perl} i com a conseqüència es relativament fàcil
+d'adaptar i extendre la funcionalitat a casos d'us concret. Tot i no estar
+escrit en codi compilat, la majoria d'operacions al fer copies de seguretat son d'I/O
+utilitzant \emph{tar}, per tant no hi ha problemes de rendiment rellevants
+\footnote{Excepte que la versió de \emph{Perl} del sistema ha d'estar compilada
+amb \emph{largefiles} si es volen fer copies de fitxers de mes de 2 Gb
+}.
+
+El programa és molt més simple que \emph{Veeam} o \emph{Bacula} ja que només
+pretén fer copies de seguretat a un servidor central. No te cap tipus de
+integració amb serveis del núvol, copia de maquines virtuals, copia de bases de
+dades o fitxers en ús ni copia en cinta \cite{noauthor_backuppc_nodate}.
